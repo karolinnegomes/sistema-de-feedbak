@@ -1,0 +1,22 @@
+{
+  "name": "sistema-de-feedbak",
+  "version": "1.0.0",
+  "description": "Sistema de feedback com cypress",
+  "main": "app.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karolinnegomes/sistema-de-feedbak.git"
+  },
+  "author": "karolinepinheiro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karolinnegomes/sistema-de-feedbak/issues"
+  },
+  "homepage": "https://github.com/karolinnegomes/sistema-de-feedbak#readme",
+  "devDependencies": {
+    "cypress": "^12.6.0"
+  }
+}
