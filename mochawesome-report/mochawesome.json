@@ -1,0 +1,138 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-02-25T14:26:46.177Z",
+    "end": "2023-02-25T14:26:52.564Z",
+    "duration": 6387,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "35561784-ce8e-4da9-a3eb-618a3b42a6f3",
+      "title": "",
+      "fullFile": "cypress/e2e/3-alurapic/alurapic.cy.js",
+      "file": "cypress/e2e/3-alurapic/alurapic.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "74a883b1-85d4-461d-a9f2-db14df07f498",
+          "title": "Login e registro de um novo usuario",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verificar mensagem de validação",
+              "fullTitle": "Login e registro de um novo usuario Verificar mensagem de validação",
+              "timedOut": null,
+              "duration": 2151,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.contains('button', 'Register').click();\ncy.contains('ap-vmessage', 'Email is required!').should('be.visible');",
+              "err": {},
+              "uuid": "1af16a47-eb36-4e72-b2e9-ecfcd48e11af",
+              "parentUUID": "74a883b1-85d4-461d-a9f2-db14df07f498",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verifica mensagem de email invalido",
+              "fullTitle": "Login e registro de um novo usuario Verifica mensagem de email invalido",
+              "timedOut": null,
+              "duration": 1181,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.contains('button', 'Register').click();\ncy.get('input[formcontrolname=\"email\"]').type('karoline');\ncy.contains('ap-vmessage', 'Invalid e-mail').should('be.visible');",
+              "err": {},
+              "uuid": "72834a6b-bdb4-4b6d-8a23-4741b4beef46",
+              "parentUUID": "74a883b1-85d4-461d-a9f2-db14df07f498",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verifica mensagem de senha com menos de 8 caracter ",
+              "fullTitle": "Login e registro de um novo usuario Verifica mensagem de senha com menos de 8 caracter ",
+              "timedOut": null,
+              "duration": 1306,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('a', 'Register now').click();\ncy.contains('button', 'Register').click();\ncy.get('input[formcontrolname=\"password\"]').type('123');\ncy.contains('button', 'Register').click();\ncy.contains('ap-vmessage', 'Mininum length is 8').should('be.visible');",
+              "err": {},
+              "uuid": "33dcfb62-3939-4230-91c6-aedb4e2bd59a",
+              "parentUUID": "74a883b1-85d4-461d-a9f2-db14df07f498",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1af16a47-eb36-4e72-b2e9-ecfcd48e11af",
+            "72834a6b-bdb4-4b6d-8a23-4741b4beef46",
+            "33dcfb62-3939-4230-91c6-aedb4e2bd59a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4638,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
